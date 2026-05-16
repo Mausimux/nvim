@@ -52,6 +52,10 @@ vim.opt.confirm = true
 vim.keymap.set("n", "<Esc>", '<cmd>nohlsearch<CR>')
 
 
+-- Netrw explorer
+vim.g.netrw_liststyle = 3
+
+
 -- Plugin helpers
 local gh = function(repo) return 'https://github.com/' .. repo end
 
