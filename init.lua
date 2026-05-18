@@ -70,3 +70,12 @@ end
 -- Keybindings popup
 plugin{ src = gh('folke/which-key.nvim'), name = 'which-key'}.setup()
 
+-- LSP
+vim.pack.add {
+	gh('neovim/nvim-lspconfig'),
+	gh('mason-org/mason.nvim'),
+	gh('mason-org/mason-lspconfig.nvim'),
+}
+
+require('mason').setup()
+require('mason-lspconfig').setup()
