@@ -1,3 +1,6 @@
+require('lsp')
+
+
 -- Indentation
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
@@ -56,26 +59,3 @@ vim.keymap.set("n", "<Esc>", '<cmd>nohlsearch<CR>')
 vim.g.netrw_liststyle = 3
 
 
--- Plugin helpers
-local gh = function(repo) return 'https://github.com/' .. repo end
-
-local plugin = function(spec)
-	vim.pack.add{
-		spec
-	}
-	return require(spec.name)
-end
-
-
--- Keybindings popup
-plugin{ src = gh('folke/which-key.nvim'), name = 'which-key'}.setup()
-
--- LSP
-vim.pack.add {
-	gh('neovim/nvim-lspconfig'),
-	gh('mason-org/mason.nvim'),
-	gh('mason-org/mason-lspconfig.nvim'),
-}
-
-require('mason').setup()
-require('mason-lspconfig').setup()
