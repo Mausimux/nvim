@@ -1,4 +1,7 @@
+vim.g.mapleader = ' '
+
 require('lsp')
+require('fuzzy_finder')
 
 
 -- Indentation
