@@ -1,5 +1,3 @@
-require('plugin')
-
 vim.pack.add{
 	Gh('nvim-lua/plenary.nvim'),
 	Gh('nvim-telescope/telescope.nvim')

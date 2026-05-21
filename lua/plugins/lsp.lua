@@ -1,7 +1,3 @@
-require('plugin')
-
-
--- LSP
 vim.pack.add {
 	Gh('neovim/nvim-lspconfig'),
 	Gh('mason-org/mason.nvim'),

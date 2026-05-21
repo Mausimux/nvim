@@ -1,8 +1,6 @@
 vim.g.mapleader = ' '
 
-require('lsp')
-require('fuzzy_finder')
-require('file_explorer')
+require('plugins')
 
 
 -- Indentation

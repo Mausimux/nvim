@@ -1,5 +1,3 @@
-require('plugin')
-
 vim.pack.add{
 	Gh('nvim-mini/mini.icons'),
 	Gh('stevearc/oil.nvim'),
