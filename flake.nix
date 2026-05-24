@@ -11,7 +11,7 @@
 	in {
 		devShells.${system}.default = pkgs.mkShell {
 			packages = with pkgs; [
-				lua-language-server
+				emmylua-ls
 			];
 		};
 	};
