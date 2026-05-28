@@ -47,3 +47,15 @@ vim.lsp.config('lua_ls', {
 	end,
 })
 
+
+-- Rust
+vim.lsp.enable('rust_analyzer')
+
+vim.lsp.config('rust_analyzer', {
+	settings = {
+		['rust-analyzer'] = {
+			check = { command = 'clippy' },
+		},
+	},
+})
+
