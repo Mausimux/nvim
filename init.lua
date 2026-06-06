@@ -1,6 +1,11 @@
 vim.g.mapleader = ' '
 
-require('plugins')
+Gh = function(repo) return 'https://github.com/' .. repo end
+
+require('lsp')
+require('finder')
+require('explorer')
+require('whichkey')
 
 
 -- Indentation
