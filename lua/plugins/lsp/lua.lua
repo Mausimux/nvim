@@ -1,8 +1,3 @@
-vim.pack.add {
-	Gh('neovim/nvim-lspconfig'),
-}
-
--- Load Neovim's Lua API for both most popular Lua LSPs
 vim.lsp.config('emmylua_ls', {
 	on_init = function(client)
 		if client.workspace_folders then
@@ -47,15 +42,4 @@ vim.lsp.config('lua_ls', {
 	end,
 })
 
-
--- Rust
-vim.lsp.enable('rust_analyzer')
-
-vim.lsp.config('rust_analyzer', {
-	settings = {
-		['rust-analyzer'] = {
-			check = { command = 'clippy' },
-		},
-	},
-})
-
+vim.lsp.enable({'lua_ls', 'emmylua_ls'})
