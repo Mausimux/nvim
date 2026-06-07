@@ -5,3 +5,4 @@ vim.pack.add {
 require('lsp.lua')
 require('lsp.rust')
 require('lsp.nix')
+require('lsp.qml')
