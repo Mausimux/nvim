@@ -6,4 +6,4 @@ vim.pack.add{
 require('mini.icons').setup()
 require('oil').setup()
 
-vim.keymap.set('n', '<Leader>e', '<Cmd>e .<CR>', {desc = 'Open project root directory'})
+vim.keymap.set('n', '<Leader>e', '<Cmd>Oil<CR>', {desc = 'Open parent directory'})
