@@ -18,3 +18,7 @@ vim.opt.completeopt = {
 	'preinsert',
 	'preview',
 }
+
+vim.o.pumheight = 8
+vim.o.pumborder = 'rounded'
+vim.o.pumblend = 15
