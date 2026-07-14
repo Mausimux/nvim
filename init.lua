@@ -16,5 +16,5 @@ require('lsp')
 require('finder')
 require('explorer')
 require('whichkey')
-
+require('git')
 
