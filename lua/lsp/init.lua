@@ -1,3 +1,5 @@
+require('lsp.completion')
+
 vim.pack.add {
 	Gh('neovim/nvim-lspconfig'),
 }
