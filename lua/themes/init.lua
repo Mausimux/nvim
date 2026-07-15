@@ -1,6 +1,7 @@
 require('themes.catppuccin')
 require('themes.kanagawa')
 require('themes.tokyonight')
+require('themes.nightfox')
 
 vim.keymap.set("n", "<leader>uC",
 	function()
@@ -12,4 +13,4 @@ vim.keymap.set("n", "<leader>uC",
 	{ desc = "Telescope: Colorscheme (live preview)" }
 )
 
-vim.cmd('colorscheme catppuccin')
+vim.cmd('colorscheme carbonfox')
