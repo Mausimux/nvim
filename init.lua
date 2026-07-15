@@ -17,4 +17,5 @@ require('finder')
 require('explorer')
 require('whichkey')
 require('git')
+require('themes')
 
