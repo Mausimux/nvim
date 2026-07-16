@@ -18,4 +18,5 @@ require('explorer')
 require('whichkey')
 require('git')
 require('themes')
+require('inline_diagnostics')
 
