@@ -3,6 +3,7 @@ vim.g.mapleader = ' '
 Gh = function(repo) return 'https://github.com/' .. repo end
 
 vim.opt.clipboard = "unnamedplus"
+vim.opt.undofile = true
 vim.opt.confirm = true
 vim.opt.cursorline = true
 vim.keymap.set("n", "<Esc>", '<cmd>nohlsearch<CR>')
